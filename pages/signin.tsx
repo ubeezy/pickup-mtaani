@@ -24,9 +24,7 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: '#42CD8E' }}>
-            <LockOutlinedIcon />
-          </Avatar>
+          <Avatar sx={{ height: "4.5rem", width:"4.5rem" }} src="https://pbs.twimg.com/profile_images/1240932977422598144/VZ-Bp63M_400x400.jpg"/>
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
@@ -49,12 +47,12 @@ export default function SignIn() {
         sm={4}
         md={8}
         sx={{
-          backgroundImage: 'url(https://lh3.googleusercontent.com/Vrmz8X7tAk7W7ghz6oQ9Ik2Z95UtS6LPPR1mUYWjtTNcdMDJvelHxTgfVeWj5hRMa1iVriE0vTp3HHKNfRC8CzObwSLwGS14WPw87g=w1400-v0)',
-          backgroundRepeat: 'repeat',
+          backgroundImage: 'url(https://scontent.fnbo10-1.fna.fbcdn.net/v/t39.30808-6/273115645_487723499537424_694447950457268263_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0debeb&_nc_ohc=xDD1kehpTe4AX98p6jO&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fnbo10-1.fna&oh=00_AfB8H-e1ZJJog-otc4mgaem02JWxUYibxIu_xpp-S2wYdQ&oe=646AB1E5)',
+          // backgroundRepeat: 'repeat',
           backgroundColor: (t) =>
             t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          // backgroundPosition: 'center',
         }}
       />
 
