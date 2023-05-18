@@ -1,7 +1,6 @@
 import { useSupabaseClient } from '@supabase/auth-helpers-react'
 import * as React from 'react';
 import { Avatar, Box, CssBaseline, Grid, Link, Paper, Typography } from '@mui/material';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { ThemeSupa } from '@supabase/auth-ui-shared';
 import { Auth } from '@supabase/auth-ui-react'
 import { useTheme } from '@mui/material/styles';
@@ -33,7 +32,17 @@ export default function SignIn() {
         <Box sx={{ mx: 6 }}>
           <Auth
             supabaseClient={supabase}
-            appearance={{ theme: ThemeSupa }}
+            appearance={{ 
+              theme: ThemeSupa,
+              variables: {
+                default: {
+                  colors: {
+                    brand: "#ffc107",
+                    brandAccent: '#FDD835',
+                  },
+                },
+              },
+             }}
             magicLink
             providers={['google']}
             redirectTo="/signin"

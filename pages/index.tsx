@@ -69,7 +69,7 @@ export default function Index() {
                   <Button
                     hidden
                     fullWidth
-                    sx={{ color: tier.buttonVariant == 'contained' ? `contrastText` : '#42CD8E' }}
+                    sx={{ color: tier.buttonVariant == 'contained' ? `contrastText` : '#ffc107' }}
                     variant={tier.buttonVariant as 'outlined' | 'contained'}
                     onClick={() => router.push(`${tier.price}`)}
                   >
