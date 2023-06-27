@@ -87,6 +87,7 @@ export default function CheckboxListSecondary() {
                   <Avatar
                     alt={invitee_email}
                     src=""
+                    color="primary"
                   />
                 </ListItemAvatar>
                 <ListItemText id={labelId} primary={invitee_email} />

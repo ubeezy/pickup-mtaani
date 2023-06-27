@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import { supabase } from "../utility/supabaseClient";
 import { store } from "../redux/store";
 import Layout from '../components/layout';
+import account from '../components/account';
 
 interface MyAppProps extends AppProps {
   initialSession: Session;

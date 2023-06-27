@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { openSkyApi } from "./hooks";
+import { retoolApi } from "./hooks";
 import theme from "./themeSlice";
 import userProfileReducer from './userProfileSlice';
 
@@ -7,11 +7,11 @@ export const store = configureStore({
     reducer: {
         theme,
         userProfile: userProfileReducer,
-        [openSkyApi.reducerPath]: openSkyApi.reducer,
+        [retoolApi.reducerPath]: retoolApi.reducer,
     },
 
     middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat(openSkyApi.middleware),
+        getDefaultMiddleware().concat(retoolApi.middleware),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

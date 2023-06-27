@@ -40,9 +40,9 @@ export default function Layout({ children }: Props) {
       <Head>
         <title>Mtaani - affordable and convenient collection points</title>
       </Head>
-      {currentRoute !== "/signin" && <Navbar />}
+       <Navbar />
       <Box component="main">
-        <Container disableGutters maxWidth={currentRoute == "/signin" ? "xl" : "md"} component="main">
+        <Container disableGutters maxWidth={"md"} component="main">
           {children}
         </Container>
       </Box>
